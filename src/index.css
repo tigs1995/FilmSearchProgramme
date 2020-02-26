@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.movie{
+  text-align: center;
+  border-style: solid;
+}
+
+
+
+button{
+  height: 40px;
+  width: 120px;
+}
+
+input{
+  height: 30px;
+  width: 120px;
+  border-style: solid;
+}
+
+
+
+
+
+
