@@ -28,13 +28,13 @@ export default class Parent extends Component {
     render() {
         const stateDeclaration = this.state.data;
         return (
-            <div class='movie'>
+            <div id='details'>
+                <Image id='imagePoster' data={stateDeclaration.Poster}/>
                 <DisplayData class='title' name='Title' data={stateDeclaration.Title} ></DisplayData>
                 <DisplayData name='Year' data={stateDeclaration.Year} ></DisplayData>
                 <DisplayData name='Rated' data={stateDeclaration.Rated} ></DisplayData>
                 <DisplayData name='Genre' data={stateDeclaration.Genre} ></DisplayData>
                 <DisplayData name='Plot' data={stateDeclaration.Plot} ></DisplayData>
-                <Image data={stateDeclaration.Poster}/>
             </div>
 
         );

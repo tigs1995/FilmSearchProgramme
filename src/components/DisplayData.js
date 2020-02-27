@@ -3,7 +3,11 @@ import React, { Component } from 'react';
 export default class DisplayData extends Component {
     render() {
         return (
-                <h3>{this.props.name}: {this.props.data}</h3>
+            <div id='displaydata'>
+                <p id='name'>{this.props.name}: </p>
+                <p id='data'>{this.props.data}</p>
+            </div>
+
         );
     }
 }

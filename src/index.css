@@ -12,23 +12,65 @@ code {
     monospace;
 }
 
-.movie{
+.card{
+  width: 300px;
+  height: 580px;
   text-align: center;
-  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+  column-count: 2;
 }
 
+#movies{
+  column-count: 2;
+}
 
-
-button{
+.detailsButton{
   height: 40px;
   width: 120px;
 }
 
-input{
-  height: 30px;
+button{
+  height: 40px;
   width: 120px;
-  border-style: solid;
+  text-align: center;
 }
+
+input{
+  height: 39px;
+  width: 80%;
+  margin-bottom: 200px;
+}
+
+h2{
+  float: left;
+  color: grey;
+  text-indent: 0;
+}
+
+p{
+  text-align: left;
+}
+
+#imagePoster{
+  float: left;
+}
+
+#details{
+  column-count: 2;
+  column-gap: 0;
+}
+
+#name{
+  float: left;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+
+
+
+
 
 
 

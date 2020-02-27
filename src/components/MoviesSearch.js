@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import Search from './Search';
 import axios from "axios";
-import DisplayData from './DisplayData';
 import Button from './Button';
-import Image from './Image';
+import { Card } from 'react-bootstrap';
 
 
 export default class Parent extends Component {
@@ -40,12 +39,16 @@ export default class Parent extends Component {
             <div>
                 <Search handleChange={this.handleChange} />
                 <Button class='searchButton' name='Search' handleClick={this.handleClick}></Button>
-                {this.state.data.map(film =>
-                    <div class='movie'>
-                        <DisplayData name='Title' data={film.Title} ></DisplayData>
-                        <Image data={film.Poster} /> <br/>
-                        <Button class='detailsButton' id={film.imdbID} name='Details' handleClick={this.handleMovieClick}></Button>
-                    </div>)}
+                <div id='movies'>
+                    {this.state.data.map(film =>
+                        <Card border="dark" class='movie'>
+                            <Card.Img src={film.Poster} />
+                            <Card.Body>
+                                <Card.Title>{film.Title}</Card.Title>
+                                <Button class='detailsButton' id={film.imdbID} name='Details' handleClick={this.handleMovieClick}></Button>
+                            </Card.Body>
+                        </Card>
+                    )}</div>
             </div>
         );
     }
